@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+  <style>
+  body {
+    text-align: center;
+  }
+  </style>
 </head>
 
 
 <body>
-  <h1>Pyramid Slider</h1>
+    <h1>Pyramid Slider</h1>
 
-  <form>
-    Pyramid Height!
-    <br></br>
-    <input type = "range" name = "height" min = "0" max = "18">
-    <br></br>
-    <input type = "submit">
-    <br></br>
-  </form>
+    <form>
+        Pyramid Height!
+        <br></br>
+        <input type="range" id ="height" min="0" max="18" oninput="printPyramid()">
+        <br></br>
 
-  <div id = "pyramid" />
+    </form>
 
-<script src = "pyramid.js"></script>
+    <div id="pyramid" />
+<script src="pyramid.js"></script>
+
 </body>
 
 </html>
