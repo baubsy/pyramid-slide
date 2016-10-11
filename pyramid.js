@@ -1,7 +1,5 @@
 
 //gets the height
-var strHeight = document.getElementById("height").value;
-var height = parseInt(strHeight);
 
 //prints the pyramid
 var blocks = 2;
@@ -10,7 +8,11 @@ var row = "";
 function printPyramid()
 {
   //console.log("FUnction ran")//debug
+  var strHeight = document.getElementById("height").value;
+  var height = parseInt(strHeight);
+
   //clears old pyramid
+  event.preventDefault();
   document.getElementById("pyramid").innerHTML = "";
   blocks = 2;
 for(var i = 0; i < height - 1; i++)
